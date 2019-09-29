@@ -1,6 +1,15 @@
 # nodedomain-util
 A set of pure functions for easy domain string manipulation written in JavaScript for Node
 
+NPM:
+  https://www.npmjs.com/package/nodedomain-util
+
+
+Installation:
+
+> $ npm install nodedomain-util
+
+
 Use example:
 
 ```javascript
