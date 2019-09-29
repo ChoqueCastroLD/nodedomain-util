@@ -1,6 +1,6 @@
 {
   "name": "nodedomain-util",
-  "version": "1.0.0",
+  "version": "1.5.2",
   "description": "A set of pure functions for easy domain string manipulation written in JavaScript for Node",
   "main": "src/nodedomainutil.js",
   "scripts": {
