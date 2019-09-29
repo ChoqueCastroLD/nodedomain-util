@@ -1,5 +1,13 @@
 const ndt = require('./nodedomainutil.js');
 
+test('getDomain test, passing a localhost url should return localhost domain', () => 
+    expect(
+        ndt.getDomain('http://localhost/')
+    )
+    .toBe(
+        'localhost'
+    )
+)
 
 test('getDomain test, passing a url should return its domain name', () => 
     expect(
@@ -25,5 +33,14 @@ test('cleanUrl test, passing a url should remove protocol and routes from url', 
     )
     .toBe(
         'www.luischoque.com'
+    )
+)
+
+test('cleanUrl test, passing a localhost url should remove protocol and routes from url', () => 
+    expect(
+        ndt.cleanUrl('https://localhost:90/api/v1/users/4')
+    )
+    .toBe(
+        'localhost:90'
     )
 )
